@@ -131,9 +131,19 @@ function Tenants() {
         )}
           </Col>
           <Col size="md-6 sm-12">
-            <h3>
+            <h3>Tenant Stats</h3>
+            <h5>
             {"This month's revenue is : " + tenants.reduce((total, next) => total + next.rent, 0)}
-            </h3>
+            </h5>
+
+            <h5>
+            {"This month's average revenue is : " + Math.round (tenants.reduce((total, next) => total + next.rent, 0)/tenants.length)}
+            </h5>
+
+            <h5>
+            {"This month's current tenant count : " + tenants.length}
+            </h5>
+
           </Col>
         
 
