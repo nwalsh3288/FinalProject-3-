@@ -22,18 +22,29 @@ function Detail(props) {
           <Col size="md-12">
             <Jumbotron>
               <h1>
-                {tenant.unit} by {tenant.name}
+                Name: {tenant.name}
+              </h1>
+              <h1>
+                Unit Number: {tenant.unit}
               </h1>
             </Jumbotron>
           </Col>
         </Row>
+        <br/>
+        <br/>
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>Synopsis</h1>
-              <p>
-                {tenant.synopsis}
-              </p>
+              <h3>Tenant Details</h3>
+              <h6>
+                Rent is: {tenant.rent}
+              </h6>
+              <h6>
+                Move in Date: {tenant.moveInDate}
+                </h6>
+              <h6>
+                Move out Date: {tenant.moveOutDate}
+              </h6>
             </article>
           </Col>
         </Row>

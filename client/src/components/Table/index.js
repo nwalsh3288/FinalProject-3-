@@ -64,8 +64,8 @@ class Table extends Component {
     render() { 
         return ( 
             <>
-           {"Case Sensitive Filter"}
-           <hr/>
+           <h3>Filter by Tenant</h3>
+         
             <input type="text" value={this.state.input} onChange={(e) => this.inputChangeHandler(e)}/>
         <table> 
             <thead>

@@ -62,6 +62,7 @@ function Tenants() {
       <Container fluid>
         <Row>
           <Col size="md-6">
+            <h3>Tenant Form</h3>
             <form>
               <Input
                 onChange={handleInputChange}
@@ -98,6 +99,7 @@ function Tenants() {
             </form>
           </Col>
           <Col size="md-6 sm-12">
+            <h3>Tenant Details</h3>
             {tenants.length ? (
               <List>
                 {tenants.map(tenant => (
@@ -129,7 +131,9 @@ function Tenants() {
         )}
           </Col>
           <Col size="md-6 sm-12">
+            <h3>
             {"This month's revenue is : " + tenants.reduce((total, next) => total + next.rent, 0)}
+            </h3>
           </Col>
         
 
